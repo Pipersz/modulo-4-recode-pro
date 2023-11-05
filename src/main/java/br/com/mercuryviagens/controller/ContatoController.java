@@ -1,4 +1,4 @@
-package br.com.mercuryviagens.resources;
+package br.com.mercuryviagens.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

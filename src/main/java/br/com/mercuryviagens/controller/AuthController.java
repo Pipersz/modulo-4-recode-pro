@@ -1,4 +1,4 @@
-package br.com.mercuryviagens.resources;
+package br.com.mercuryviagens.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

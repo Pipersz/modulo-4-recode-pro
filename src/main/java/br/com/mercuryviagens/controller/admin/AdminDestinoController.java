@@ -1,4 +1,4 @@
-package br.com.mercuryviagens.resources.admin;
+package br.com.mercuryviagens.controller.admin;
 
 import java.io.IOException;
 import java.util.ArrayList;
