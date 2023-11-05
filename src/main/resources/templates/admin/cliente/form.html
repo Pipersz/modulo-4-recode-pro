@@ -37,14 +37,16 @@
 					
 					<div class="form-group">
 						<label for="nome">Nome</label>
-						<input type="text" required th:field="*{nome}" class="form-control">
+						<input type="text" required th:field="*{nome}" 
+							class="form-control" id="nome">
 					</div>
 					<div class="form-group">
-						<label for="destino">E-mail</label>
-						<input type="email" required th:field="*{email}" class="form-control">
+						<label for="email">E-mail</label>
+						<input type="email" required th:field="*{email}" class="form-control"
+							id="email">
 					</div>
 					<div class="form-group mt-3">
-						<button class="btn btn-outline-secondary">Cadastrar</button>
+						<button class="btn btn-outline-secondary">Salvar</button>
 					</div>
 				</form>
 				
