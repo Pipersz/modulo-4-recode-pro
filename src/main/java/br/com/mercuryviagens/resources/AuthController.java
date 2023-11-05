@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value = "/login")
-public class AuthResource {
+public class AuthController {
 
 	@GetMapping
 	public ModelAndView login() {
