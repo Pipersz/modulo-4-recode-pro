@@ -13,7 +13,7 @@ import br.com.mercuryviagens.service.DestinoService;
 
 @Controller
 @RequestMapping("/destinos")
-public class DestinoResource {
+public class DestinoController {
 	
 	@Autowired
 	DestinoService destinoService;
