@@ -21,7 +21,7 @@ public class HomeController {
 	@GetMapping
 	public String home(Model model) {
 		
-		List<PacoteViagem> pacotes = pacoteService.findAll();
+		List<PacoteViagem> pacotes = pacoteService.findMostRecent(3);
 		model.addAttribute("pacotes", pacotes);
 		
 		return "home";

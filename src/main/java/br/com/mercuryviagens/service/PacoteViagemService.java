@@ -4,6 +4,10 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import br.com.mercuryviagens.domain.PacoteViagem;
@@ -27,6 +31,13 @@ public class PacoteViagemService {
 	
 	public List<PacoteViagem> findAll() {
 		return repo.findAll();
+	}
+	
+	public List<PacoteViagem> findMostRecent(int num) {
+		Sort sort = Sort.by(Sort.Direction.DESC, "id");
+		Pageable page = PageRequest.of(0, num, sort);
+		Page<PacoteViagem> result = repo.findAll(page);
+		return result.getContent();
 	}
 	
 	public PacoteViagem save(PacoteViagem pacoteViagem) {
