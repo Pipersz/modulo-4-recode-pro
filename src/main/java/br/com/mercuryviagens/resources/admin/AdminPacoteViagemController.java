@@ -23,7 +23,7 @@ import br.com.mercuryviagens.service.PacoteViagemService;
 
 @Controller
 @RequestMapping(value = "/admin/pacotes")
-public class AdminPacoteViagemResource {
+public class AdminPacoteViagemController {
 
 	@Autowired
 	private PacoteViagemService service;
