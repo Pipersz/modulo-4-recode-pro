@@ -19,7 +19,7 @@ import br.com.mercuryviagens.service.ContatoService;
 
 @Controller
 @RequestMapping("/admin/contatos")
-public class AdminContatoResource {
+public class AdminContatoController {
 
 	@Autowired
 	private ContatoService service;
