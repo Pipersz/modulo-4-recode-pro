@@ -51,7 +51,8 @@
               </div>
   
               <div class="card-body w-100">
-                <h3 class="card-title" th:text="*{destino.nome}">Nome</h3>
+                <h3 class="card-title" th:text="*{nome}">Pacote</h3>
+                <h4 th:text="*{destino.nome}">Destino</h4>
                 <p class="card-text overflow-y-scroll card-body-description"
                   th:text="*{destino.descricao}">Descrição</p>
                 <p class="secondary-bg p-1">
