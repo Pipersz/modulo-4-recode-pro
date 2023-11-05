@@ -13,7 +13,7 @@ import br.com.mercuryviagens.service.PacoteViagemService;
 
 @Controller
 @RequestMapping(value = "/")
-public class HomeResource {
+public class HomeController {
 
 	@Autowired
 	private PacoteViagemService pacoteService; 
