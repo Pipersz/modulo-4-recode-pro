@@ -26,7 +26,7 @@ import br.com.mercuryviagens.service.DestinoService;
 
 @Controller
 @RequestMapping("/admin/destinos")
-public class AdminDestinoResource {
+public class AdminDestinoController {
 	
 	@Autowired
 	private DestinoService service;
