@@ -18,7 +18,7 @@ import br.com.mercuryviagens.service.ClienteService;
 
 @Controller
 @RequestMapping("/admin/clientes")
-public class AdminClienteResource {
+public class AdminClienteController {
 
 	@Autowired
 	private ClienteService service;
